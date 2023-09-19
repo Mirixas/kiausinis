@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <h2 style="text-align:center;">Sveiki Visi</h2>
+    </head>
+
+    <body>
+        <br><br>
+    <img id="myImage" src='EggOff.jpg' width="192" height="108">
+        <br>
+        <button type="button" onclick="changeImage()"";>Spausk ciaa</button>
+    </body>
+
+    <script>
+        function changeImage() {
+            var image = document.getElementById('myImage')
+            if (image.src.match("EggOff")) {
+                image.src = "Egg.png"
+            } else {
+                image.src = "EggOff.jpg"
+            }
+        }
+    </script>
+</html>
